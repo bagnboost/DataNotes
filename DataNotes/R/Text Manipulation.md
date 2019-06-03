@@ -4,8 +4,11 @@ We first need to know what the expected character length is, as some observation
 2. 
 
     char_length <- 9
-    df$var_mising_0 <- str_sub(paste0("000000000",df$var_missing),-char_length,-1)
+    df$var_mising_0 <- str_sub(paste0(
+                                                                paste(rep("0", char_length ), collapse = ""),
+                                                                 "1234"),
+                                                    -char_length,-1)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NzcyMDA2NV19
+eyJoaXN0b3J5IjpbLTIzMzE0NTUzMCwxNjg3NzIwMDY1XX0=
 -->
