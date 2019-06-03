@@ -6,10 +6,11 @@ We first need to know what the expected character length is, as some observation
 4. Use str_sub() to substitute this long string with only the characters needed. For example, if an observation is missing 2 leading 0s and we know it must be 9 characters, then we have 7 characters remaining. We paste 9 0's to the front so it now has 16 characters (more than enough). We know it should only be a 9 character string so we take only the last 9 characters by specifying minus signs on the start and end points in str_sub().
 
        char_length <- 9
-       df$var_mising_0 <- str_sub(paste0(paste(rep("0", char_length ), collapse = ""),
+       df$var_mising_0 <- str_sub(paste0(paste(rep("0", char_length), collapse = ""),
                                          df$var_missing_0),
                                   -char_length,-1)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTczMDE3MzQxNSwxNjg3NzIwMDY1XX0=
+eyJoaXN0b3J5IjpbLTE5MDQxNzQ4MzEsLTczMDE3MzQxNSwxNj
+g3NzIwMDY1XX0=
 -->
