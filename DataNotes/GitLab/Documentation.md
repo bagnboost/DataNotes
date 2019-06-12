@@ -9,30 +9,28 @@ $ git config --global user.email "michael_j_pecorino@newyorklife.com"
 
 $ git config --global user.email
 
+## Get the current working directory
+pwd
 
-Pwd
+## Set the working directory
 
-cd C:/Users/t80kf22/Documents/GitLab
+cd C:/Users/t80kf22/Documents/GitLab/xxx
 
-cd C:/Users/t80kf22/Documents/GitLab/LIFT2.0
-
-cd C:/Users/t80kf22/Documents/GitLab/DRPM
-
-git clone git@nylgit.newyorklife.com:CDSA/LIFT2.0.git
-
-git clone git@nylgit.newyorklife.com:CDSA/DRPM.git
-
-git add .
-
+## Commit changes
 git commit -m "Code cleaning update for TeleAppHighLevel.R."
 
+## Add changes
+git add .
+
+## Check the status
 git status
 
+## Push changes
 git push
 
-git pull git@nylgit.newyorklife.com:CDSA/LIFT2.0.git
+## Pull changes
 
-git pull git@nylgit.newyorklife.com:CDSA/DRPM.git
+git pull git@nylgit.newyorklife.com:CDSA/xxx
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgxNDUyODMzMF19
+eyJoaXN0b3J5IjpbLTE4Nzg1NDUzMzhdfQ==
 -->
