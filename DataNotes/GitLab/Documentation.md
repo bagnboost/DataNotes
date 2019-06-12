@@ -1,3 +1,6 @@
+# GitLab Notes
+
+## Configuration
 $ git config -global user.name "Michael Pecorino"
 
 $ git config --global user.name
@@ -5,6 +8,7 @@ $ git config --global user.name
 $ git config --global user.email "michael_j_pecorino@newyorklife.com"
 
 $ git config --global user.email
+
 
 Pwd
 
@@ -29,7 +33,6 @@ git push
 git pull git@nylgit.newyorklife.com:CDSA/LIFT2.0.git
 
 git pull git@nylgit.newyorklife.com:CDSA/DRPM.git
-
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ0ODU1MzU1OV19
+eyJoaXN0b3J5IjpbLTgxNDUyODMzMF19
 -->
