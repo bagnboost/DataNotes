@@ -31,6 +31,9 @@ git push
 ## Pull changes
 
 git pull git@nylgit.newyorklife.com:CDSA/xxx
+
+## Check status
+git status
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzg1NDUzMzhdfQ==
+eyJoaXN0b3J5IjpbLTgzNzUzMzcwNl19
 -->
