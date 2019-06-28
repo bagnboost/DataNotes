@@ -179,8 +179,12 @@ We will now introduce another stopping criteria called the max depth, which will
 			return create_leaf(right_split[response])
 		
 		#This concludes one iteration
-		#We need this function to be recursive, always performing
-		#left
+		#We need this function to be recursive
+		#Always checking stopping conditions and
+		#testing for the next best split
+		#Thus, we call this same function within the function
+		#We do it for the left branch and the right branch
+		left_tree = build_tree(left_split, remaining_features, response, current_
 		
 
 
@@ -188,5 +192,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMjE1OTAzNzJdfQ==
+eyJoaXN0b3J5IjpbMTUwNzEyMzIyMV19
 -->
