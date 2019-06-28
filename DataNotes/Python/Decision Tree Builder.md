@@ -1,13 +1,13 @@
-## Decision Tree Builder
+# Decision Tree Builder | Categorical Features
 
-### Categorical Features
-
-#### Define categorical features
+## Define categorical features
 
 	categorical_features = ['x1', 'x2', 'x3', 'x4',...]
 	data = data[categorical_features]  
 
-#### All categorical features are converted to binary variables
+## All categorical features are converted to binary variables
+We can use
+
     for feature in features categorical_features:
 	    data_one_hot_encoded=data[feature].apply(lambda x:{x:1})
 	    data_unpacked = data_one_hot_encoded.unpack(column_name_prefix = feature)
@@ -20,7 +20,7 @@
 		data.remove_column(feature)
 		data.add_columns(data_unpacked)
 	
-#### Determine the split metric
+## Determine the split metric
 There are a number of methods that we can use:
 
  - Classification error
@@ -30,13 +30,13 @@ There are a number of methods that we can use:
 
 For now, we will use classification error as the total misclassifications in the split divided by the total observations in the split.
 
-#### Algorithm
+## Algorithm
 1. Loop over every feature
 2. Within a feature loop, split the data in two. One where observations = 0 (left split), one where observations = 1 (right split).
 3.  Calculate the total error rate from both splits
 4.  If the total error rate is the smallest error rate so far, store the feature and the error rate.
 
-#### Calculating the split errors
+## Calculating the split errors
 We first need to define the method for calculating the errors at each split so we can determine the best feature to split on.
 
     def split_errors(split_responses):
@@ -63,7 +63,7 @@ We first need to define the method for calculating the errors at each split so w
 		return errors
 	    
 
-#### Determining the best split
+## Determining the best split
 Now that the metric for best split is defined, we can calculate it one feature at a time and determine the best feature to split on.
 
 This function's purpose is just to find the best feature to split the current node. It says nothing about what to do after the best feature is found.
@@ -99,7 +99,7 @@ This function's purpose is just to find the best feature to split the current no
 				best_feature = feature
 				best_error_rate = error_rate
 
-#### Creating the leaf nodes
+## Creating the leaf nodes
 We have our best split metric and the algorithm for determining which feature provides the best split at a single node.
 
 Before creating the entire tree, we want to also define the stopping point - the leaf nodes.
@@ -123,7 +123,7 @@ Before creating the entire tree, we want to also define the stopping point - the
 		
 		return leaf
 
-#### Build the tree
+## Build the tree
 We will now introduce another stopping criteria called the max depth, which will prevent the tree from creating too many intermediate nodes and prevent overfitting.
 
     def build_tree(data, features, response, current_depth = 0, max_depth = 10):
@@ -200,5 +200,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5NjQwMDk3M119
+eyJoaXN0b3J5IjpbMTI1Njg2MDMyXX0=
 -->
