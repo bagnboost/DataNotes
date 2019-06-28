@@ -36,6 +36,11 @@ For now, we will use classification error as the total misclassifications in the
 3.  Calculate the total error rate from both splits
 4.  If the total error rate is the smallest error rate so far, store the feature and the error rate.
 
+#### Calculating the split mistakes
+
+    def split_errors(node_response):
+	    
+
 #### Determining the best split
 
     def best_split(data, features, response):
@@ -63,10 +68,11 @@ For now, we will use classification error as the total misclassifications in the
 			#Calculate the error rate of this split
 			error_rate = (left_errors + right_errors)/total_observations)
 			
-			#If this is the lowest error rate found so far, store it
+			#If this is the lowest error rate found so far,
+			#store the feature anf error rate
 			if error_rate < best_error_rate:
+				best_feature = feature
 				best_error_rate = error_rate
-				best_feature = featur
 			
 
 
@@ -75,5 +81,5 @@ For now, we will use classification error as the total misclassifications in the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAzNTI4NzIyN119
+eyJoaXN0b3J5IjpbMTkxMDMxMzMwNV19
 -->
