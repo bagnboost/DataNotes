@@ -172,7 +172,15 @@ We will now introduce another stopping criteria called the max depth, which will
 		#Check to see if the split is perfect
 		#If so, create a leaf
 		if (len(left_split) == len(data)):
-			print("
+			print("Perfect split.")
+			return create_leaf(left_split[response])
+		if (len(right_split) == len(data)):
+			print("Perfect split.")
+			return create_leaf(right_split[response])
+		
+		#This concludes one iteration
+		#We need this function to be recursive, always performing
+		#left
 		
 
 
@@ -180,5 +188,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNjg2MTAxNjRdfQ==
+eyJoaXN0b3J5IjpbLTEwMjE1OTAzNzJdfQ==
 -->
