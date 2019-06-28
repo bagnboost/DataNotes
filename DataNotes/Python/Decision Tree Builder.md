@@ -128,6 +128,8 @@ We will now introduce another stopping criteria called the max depth, which will
 
     def build_tree(data, features, response, current_depth = 0, max_depth = 10):
 
+		#Determing which features haven
+		remaining_features = features[:]
 		#Define the response variable
 		response_values = data[response]
 
@@ -140,7 +142,12 @@ We will now introduce another stopping criteria called the max depth, which will
 				return create_leaf(response_values)
 			
 			#Stopping condition 2:
-			#Check if there are any fea
+			#Check if there are any features remaining to split on
+			#If we already split every feature,
+			#create a leaf
+			if (len(remaining_features) == 0):
+				print("Stopping condition 2 reached.")
+				return create_leaf(response_values)
 		
 
 
@@ -148,5 +155,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MjQyNjI0OTNdfQ==
+eyJoaXN0b3J5IjpbLTEyMjExMTA1MjZdfQ==
 -->
