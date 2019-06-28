@@ -64,7 +64,9 @@ We first need to define the method for calculating the errors at each split so w
 	    
 
 #### Determining the best split
-Now that the metric for best split is defined, we can calculate it one feature at a time and determine the best feature to spli
+Now that the metric for best split is defined, we can calculate it one feature at a time and determine the best feature to split on.
+
+This function's purpose is just to find the best feature to split the current node. It says nothing about what to do after the best feature is found.
 
     def best_split(data, features, response):
 	    #Initialize the best feature for storing
@@ -96,7 +98,9 @@ Now that the metric for best split is defined, we can calculate it one feature a
 			if error_rate < best_error_rate:
 				best_feature = feature
 				best_error_rate = error_rate
-			
+
+#### Bulding the tree
+We have our best split metric and the algorithm for determining which feature provides the best split at
 
 
 
@@ -104,5 +108,5 @@ Now that the metric for best split is defined, we can calculate it one feature a
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA4MTUyNzkzNF19
+eyJoaXN0b3J5IjpbMTgyODU1ODM1Nl19
 -->
