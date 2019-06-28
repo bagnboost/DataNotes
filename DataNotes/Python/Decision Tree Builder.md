@@ -30,11 +30,16 @@ There are a number of methods that we can use:
 
 For now, we will use classification error as the total misclassifications in the split divided by the total observations in the split.
 
+#### Algorithm
+1. Loop over every feature
+2. Within a feature loop, split the data in two. One where observations = 0 (left split), one where observations = 1 (right split).
+3.  
+
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTAyNjU5NjJdfQ==
+eyJoaXN0b3J5IjpbLTQxNDAxNTM5NF19
 -->
