@@ -33,7 +33,8 @@ For now, we will use classification error as the total misclassifications in the
 #### Algorithm
 1. Loop over every feature
 2. Within a feature loop, split the data in two. One where observations = 0 (left split), one where observations = 1 (right split).
-3.  
+3.  Calculate the total error rate from both splits
+4.  If the total error rate is the smallest error rate so far, 
 
 
 
@@ -41,5 +42,5 @@ For now, we will use classification error as the total misclassifications in the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQxNDAxNTM5NF19
+eyJoaXN0b3J5IjpbLTIwMDE0NDc4ODJdfQ==
 -->
