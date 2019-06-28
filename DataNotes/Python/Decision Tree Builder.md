@@ -109,7 +109,13 @@ Before creating the entire tree, we want to also define the stopping point - the
 	    leaf = {'splitting_feature]: None,
 				'left' : None,
 				'right': None,
-				'is_lea
+				'is_leaf: True}
+		
+		#Count the total obseravations of each class
+		class_zero = len(split_responses[split_responses == 0])
+		class_one = len(split_responses[split_responses == 1])
+
+			  #The prediction will be themaj
 
 
 
@@ -117,5 +123,5 @@ Before creating the entire tree, we want to also define the stopping point - the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQ1NDMzNjVdfQ==
+eyJoaXN0b3J5IjpbMTU0NDk1MTg3XX0=
 -->
