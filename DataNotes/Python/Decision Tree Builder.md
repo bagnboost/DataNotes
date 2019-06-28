@@ -23,12 +23,12 @@
 #### Determine the split metric
 There are a number of methods that we can use:
 
- - Classification accuracy
+ - Classification error
  - Gini Index
  - Information gain
  - etc.
 
-For now, we will use classification accuracy.
+For now, we will use classification error as the total misclassifications in the split divided by the total observations in the split.
 
 
 
@@ -36,5 +36,5 @@ For now, we will use classification accuracy.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNzgyMzE1NjFdfQ==
+eyJoaXN0b3J5IjpbLTIwNTAyNjU5NjJdfQ==
 -->
