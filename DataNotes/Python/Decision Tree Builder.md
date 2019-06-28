@@ -184,7 +184,14 @@ We will now introduce another stopping criteria called the max depth, which will
 		#testing for the next best split
 		#Thus, we call this same function within the function
 		#We do it for the left branch and the right branch
-		left_tree = build_tree(left_split, remaining_features, response, current_
+		left_tree = build_tree(left_split, remaining_features, response, current_depth + 1, max_depth)
+		right_tree = build_tree(right_split, remaining_features, response, current_depth + 1, max_depth)
+
+		#Return a dictionary of items
+		return {'is_leaf': False,
+				'prediction': None,
+				'spliting_feature': splitting_feature,
+				'left': 
 		
 
 
@@ -192,5 +199,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwNzEyMzIyMV19
+eyJoaXN0b3J5IjpbLTE1Mzg1MDc3OTJdfQ==
 -->
