@@ -20,10 +20,21 @@
 		data.remove_column(feature)
 		data.add_columns(data_unpacked)
 	
-#### Determ
+#### Determine the split metric
+There are a number of methods that we can use:
+
+ - Classification accuracy
+ - Gini Index
+ - Information gain
+ - etc.
+
+For now, we will use classification accuracy.
+
+
+
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcyNzE1MDYxMV19
+eyJoaXN0b3J5IjpbLTEyNzgyMzE1NjFdfQ==
 -->
