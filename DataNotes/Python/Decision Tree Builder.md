@@ -203,8 +203,9 @@ Building the tree does not output any performance metrics. We need to use the tr
 	    if tree['is_leaf'] == True:
 		    return tree['prediction']
 		
-		#If the tree is not a leaf, 
+		#If the tree is not a leaf, continue searching for leaf
 		else:
+			split_value = dat
 		
 
 ## Evaluate The Tree
@@ -213,6 +214,6 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MjU0NTU5NjcsLTQ1MTg1NTE2MCwtMT
-Q1MTU3NDMxM119
+eyJoaXN0b3J5IjpbNzEyNTUxMzMsLTQ1MTg1NTE2MCwtMTQ1MT
+U3NDMxM119
 -->
