@@ -99,12 +99,17 @@ This function's purpose is just to find the best feature to split the current no
 				best_feature = feature
 				best_error_rate = error_rate
 
-#### Bulding the tree
+#### Creating the leaf nodes
 We have our best split metric and the algorithm for determining which feature provides the best split at a single node.
 
-Now we use those two functions to build consecutive nodes of the tree, eventually culminating with the leaf nodes.
+Before creating the entire tree, we want to also define the stopping point - the leaf nodes.
 
-    def create_leaf():
+    def create_leaf(split_responses):
+	    #Create a leaf dictionary
+	    leaf = {'splitting_feature]: None,
+				'left' : None,
+				'right': None,
+				'is_lea
 
 
 
@@ -112,5 +117,5 @@ Now we use those two functions to build consecutive nodes of the tree, eventuall
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQ0Mjk2NTVdfQ==
+eyJoaXN0b3J5IjpbLTE5NTQ1NDMzNjVdfQ==
 -->
