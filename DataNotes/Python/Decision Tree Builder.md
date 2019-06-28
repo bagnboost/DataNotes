@@ -217,7 +217,7 @@ We have everything to build the tree, but building the tree does not output any 
 		
 
 ## Evaluate The Tree
-W
+We have a tree and we can use it to classify observations. Here we use those predicted classifications to evaluate the performance of the tree.
 
     def evaluate_tree_error(tree, data, response):
 	    
@@ -232,6 +232,7 @@ W
 		return error_rate
 
 ## Print Tree
+We can print a stump of the tree by placing print commands strategically.
 
     def print_stump(tree, name = 'root'):
     	
@@ -258,6 +259,6 @@ W
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA5OTE2MTU5OCwtMTU2MjA1MTI3NSwtND
-UxODU1MTYwLC0xNDUxNTc0MzEzXX0=
+eyJoaXN0b3J5IjpbLTEwMDcwODIwNzgsLTE1NjIwNTEyNzUsLT
+Q1MTg1NTE2MCwtMTQ1MTU3NDMxM119
 -->
