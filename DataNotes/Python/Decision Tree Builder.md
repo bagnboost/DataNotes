@@ -115,7 +115,13 @@ Before creating the entire tree, we want to also define the stopping point - the
 		class_zero = len(split_responses[split_responses == 0])
 		class_one = len(split_responses[split_responses == 1])
 
-			  #The prediction will be themaj
+	    #The prediction for theleaf will be the majority class
+	    if (class_zero >= class_one):
+		    leaf['prediction'] = 0
+		elif (class_one > class_zero):
+			leaf['prediction'] = 1
+		
+		return leaf
 
 
 
@@ -123,5 +129,5 @@ Before creating the entire tree, we want to also define the stopping point - the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0NDk1MTg3XX0=
+eyJoaXN0b3J5IjpbODQ5NjUwMDldfQ==
 -->
