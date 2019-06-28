@@ -4,14 +4,14 @@
 
 1. Define features
 
-    `FEATURES = ['x1', 'x2','x3','x4',...]`
+`FEATURES = ['x1', 'x2','x3','x4',...]` 
 
-3. . All categorical features are converted to binary variables
-`for feature in features: data_one_hot_encoded =data[feature].apply(lambda x:{x:1})
+2 . All categorical features are converted to binary variables
+`for feature in`: features:features:data_one_hot_encoded=data[feature].apply(lambda x:{x:1})
 	`
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzY3MzQxMjFdfQ==
+eyJoaXN0b3J5IjpbMzIyMjAzOTI1XX0=
 -->
