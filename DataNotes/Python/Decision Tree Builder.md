@@ -47,11 +47,21 @@ For now, we will use classification error as the total misclassifications in the
 
 		total_observations = float(len(data))
 		
+		#Loop through each feature
+		for feature in features:
+		
+			#Left splits are where the data = 0
+			left_split = data[data[feature] == 0]
+			
+			#Right splits are where the data = 1
+			right_split = data[data[feature] == 1]
+			
+
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ2MDEzNjM0NF19
+eyJoaXN0b3J5IjpbLTIwNDQ5MTU4NTBdfQ==
 -->
