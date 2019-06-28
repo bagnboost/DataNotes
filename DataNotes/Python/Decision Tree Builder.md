@@ -52,13 +52,15 @@ For now, we will use classification error as the total misclassifications in the
 		
 			#Left splits are where the data = 0
 			left_split = data[data[feature] == 0]
-			
 			#Right splits are where the data = 1
 			right_split = data[data[feature] == 1]
 			
-			#Calculate the errorr rate of the left split
-			left_error = node_errors(left_split[target])
-			#Calculate the errorr rate of the right split
+			#Calculate the error rate of the left split
+			left_errors = split_errors(left_split[target])
+			#Calculate the error rate of the right split
+			right_errors = split_errors(right_split[target])
+			error_rate = left_errors + right_errors/
+			
 
 
 
@@ -66,5 +68,5 @@ For now, we will use classification error as the total misclassifications in the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDEyMzIwMjZdfQ==
+eyJoaXN0b3J5IjpbMTI2MjU4MzE0NF19
 -->
