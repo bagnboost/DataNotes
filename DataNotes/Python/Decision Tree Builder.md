@@ -123,11 +123,13 @@ Before creating the entire tree, we want to also define the stopping point - the
 		
 		return leaf
 
+#### Build the tree
+
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ5NjUwMDldfQ==
+eyJoaXN0b3J5IjpbLTE2NTY5Mjg3ODRdfQ==
 -->
