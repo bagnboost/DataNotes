@@ -7,7 +7,7 @@
 
 ## All categorical features are converted to binary variables
 
-    for feature in features categorical_features:
+    for feature in categorical_features:
 	    data_one_hot_encoded=data[feature].apply(lambda x:{x:1})
 	    data_unpacked = data_one_hot_encoded.unpack(column_name_prefix = feature)
 	
@@ -39,9 +39,10 @@ For now, we will use classification error as the total misclassifications in the
 We first need to define the method for calculating the errors at each split so we can determine the best feature to split on.
 
     def split_errors(split_responses):
+	    
 	    #If the responses are empty,
 	    #then all of the responses belong to one class
-	    #so there are no mistakes
+	    #Thus, there are no errors and we can return 0
 	    if (len(split_responses) == 0):
 		    return 0
 		    
@@ -68,6 +69,7 @@ Now that the metric for best split is defined, we can calculate it one feature a
 This function's purpose is just to find the best feature to split the current node. It says nothing about what to do after the best feature is found.
 
     def best_split(data, features, response):
+	    
 	    #Initialize the best feature for storing
 	    best_feature = None
 	    #Initialze the best error rate for storing
@@ -104,6 +106,7 @@ We have our best split metric and the algorithm for determining which feature pr
 Before creating the entire tree, we want to also define the stopping point - the leaf nodes.
 
     def create_leaf(split_responses):
+	    
 	    #Create a leaf dictionary
 	    leaf = {'splitting_feature]: None,
 				'left' : None,
@@ -204,5 +207,5 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTE1NzQzMTNdfQ==
+eyJoaXN0b3J5IjpbMjA0ODc4NDczLC0xNDUxNTc0MzEzXX0=
 -->
