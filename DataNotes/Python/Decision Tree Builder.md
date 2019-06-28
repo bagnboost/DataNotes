@@ -124,12 +124,14 @@ Before creating the entire tree, we want to also define the stopping point - the
 		return leaf
 
 #### Build the tree
+We will now introduce another stopping criteria called the max depth, which will prevent the tree from creating too many intermediate no
 
+    def build_tree(data, features, response, current_depth = 0, max_depth = 10):
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTY5Mjg3ODRdfQ==
+eyJoaXN0b3J5IjpbLTEyMTkzMjY0NjVdfQ==
 -->
