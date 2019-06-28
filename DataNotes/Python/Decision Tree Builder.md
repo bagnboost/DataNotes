@@ -222,10 +222,13 @@ Building the tree does not output any performance metrics. We need to use the tr
 	    
 	    #Predict using the classify() functions
 	    prediction = data.apply(lambda x: classify(tree, x))
+	    data['prediction'] = prediction
+
+		errors - len(data[data['prediction']!= data[..'response'..]]
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNTg3NDA0NiwtNDUxODU1MTYwLC0xND
+eyJoaXN0b3J5IjpbMTQ3OTM3NzA5NiwtNDUxODU1MTYwLC0xND
 UxNTc0MzEzXX0=
 -->
