@@ -201,11 +201,15 @@ Building the tree does not output any performance metrics. We need to use the tr
 	    
 	    #If the tree split is a leaf, return the prediction
 	    if tree['is_leaf'] == True:
+		    if annotate == True:
+			    print("At leaf, prediction %s" % tree['prediction'])
 		    return tree['prediction']
 		
 		#If the tree is not a leaf, continue searching for leaf
 		else:
 			split_value = data[tree['splitting_feature']]
+			if annotate == True:
+				print("Split on %s=%s"% (tree['splitting_feature'], 
 			if (split_value == 0):
 				return classify_observations(tree['left'], data, annotate)
 		    else:
@@ -218,6 +222,6 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMzg1NjAzNSwtNDUxODU1MTYwLC0xND
-UxNTc0MzEzXX0=
+eyJoaXN0b3J5IjpbLTE3MTIzNDc4NzIsLTQ1MTg1NTE2MCwtMT
+Q1MTU3NDMxM119
 -->
