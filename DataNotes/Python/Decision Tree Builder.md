@@ -159,7 +159,11 @@ We will now introduce another stopping criteria called the max depth, which will
 		
 		#If we made it this far, it means we can continue splitting
 		#We can now determine the best split
+		splitting_feature = best_split(data, features, response)
 		
+		#Define the left and right splits
+		left_split = data[data[splitting_feature] == 0]
+		right_split = data[data[splitting_feature] == 1]
 		
 
 
@@ -167,5 +171,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk2Mjk4NjVdfQ==
+eyJoaXN0b3J5IjpbMzE1NzEzNDE5XX0=
 -->
