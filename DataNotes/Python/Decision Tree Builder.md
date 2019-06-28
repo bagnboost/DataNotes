@@ -4,7 +4,7 @@
 
 1. Define features
 
-    `FEATURES = [`
+    `FEATURES = ['x1', 'x2','x3','x4',...]`
 
 3. . All categorical features are converted to binary variables
 `for features in features:
@@ -13,5 +13,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc4Njc1MzMzXX0=
+eyJoaXN0b3J5IjpbLTExMTgzODY1MDZdfQ==
 -->
