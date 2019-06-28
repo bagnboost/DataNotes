@@ -6,7 +6,6 @@
 	data = data[categorical_features]  
 
 ## All categorical features are converted to binary variables
-We can use
 
     for feature in features categorical_features:
 	    data_one_hot_encoded=data[feature].apply(lambda x:{x:1})
@@ -200,5 +199,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1Njg2MDMyXX0=
+eyJoaXN0b3J5IjpbMTkxMzQ4NjM0M119
 -->
