@@ -100,7 +100,11 @@ This function's purpose is just to find the best feature to split the current no
 				best_error_rate = error_rate
 
 #### Bulding the tree
-We have our best split metric and the algorithm for determining which feature provides the best split at
+We have our best split metric and the algorithm for determining which feature provides the best split at a single node.
+
+Now we use those two functions to build consecutive nodes of the tree, eventually culminating with the leaf nodes.
+
+    def create_leaf():
 
 
 
@@ -108,5 +112,5 @@ We have our best split metric and the algorithm for determining which feature pr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyODU1ODM1Nl19
+eyJoaXN0b3J5IjpbLTE1OTQ0Mjk2NTVdfQ==
 -->
