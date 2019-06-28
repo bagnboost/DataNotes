@@ -233,28 +233,30 @@ Building the tree does not output any performance metrics. We need to use the tr
 ## Print Tree
 
     def print_stump(tree, name = 'root'):
-    
+    	
+    	#If there is no split return nothing
 	    split_name = tree['splitting_feature']
 	    if split_name is None:
-        print "(leaf, label: %s)" % tree['prediction']
-        return None
-    split_feature, split_value = split_name.split('.')
-    print '                       %s' % name
-    print '         |---------------|----------------|'
-    print '         |                                |'
-    print '         |                                |'
-    print '         |                                |'
-    print '  [{0} == 0]               [{0} == 1]    '.format(split_name)
-    print '         |                                |'
-    print '         |                                |'
-    print '         |                                |'
-    print '    (%s)                         (%s)' \
-        % (('leaf, label: ' + str(tree['left']['prediction']) if tree['left']['is_leaf'] else 'subtree'),
-           ('leaf, label: ' + str(tree['right']['prediction']) if tree['right']['is_leaf'] else 'subtree'))
+	        print "(leaf, label: %s)" % tree['prediction']
+	        return None
+	        
+	    split_feature, split_value = split_name.split('.')
+	    print '                       %s' % name
+	    print '         |---------------|----------------|'
+	    print '         |                                |'
+	    print '         |                                |'
+	    print '         |                                |'
+	    print '  [{0} == 0]               [{0} == 1]    '.format(split_name)
+	    print '         |                                |'
+	    print '         |                                |'
+	    print '         |                                |'
+	    print '    (%s)                         (%s)' \
+	        % (('leaf, label: ' + str(tree['left']['prediction']) if tree['left']['is_leaf'] else 'subtree'),
+	           ('leaf, label: ' + str(tree['right']['prediction']) if tree['right']['is_leaf'] else 'subtree'))
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NzExOTkwMSwtNDUxODU1MTYwLC0xND
-UxNTc0MzEzXX0=
+eyJoaXN0b3J5IjpbLTE1NjIwNTEyNzUsLTQ1MTg1NTE2MCwtMT
+Q1MTU3NDMxM119
 -->
