@@ -195,7 +195,7 @@ We will now introduce another stopping criteria called the max depth, which will
 				'right': right_tree}
 		
 ## Classify Observations
-Building the tree does not output any performance metrics. We need to use the tree's structure to classify observations as either 0 or 1. Once we do this, we can then evaluate the effectiveness of the tree.
+We have everything to build the tree, but building the tree does not output any performance metrics. We need to use the tree's structure to classify observations as either 0 or 1 and compare that to the true response variable. Once we do this, we can then evaluate the effectiveness of the tree.
 
     def classify_observations(tree, data, annotate = False)
 	    
@@ -217,6 +217,7 @@ Building the tree does not output any performance metrics. We need to use the tr
 		
 
 ## Evaluate The Tree
+W
 
     def evaluate_tree_error(tree, data, response):
 	    
@@ -257,6 +258,6 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjIwNTEyNzUsLTQ1MTg1NTE2MCwtMT
-Q1MTU3NDMxM119
+eyJoaXN0b3J5IjpbMTA5OTE2MTU5OCwtMTU2MjA1MTI3NSwtND
+UxODU1MTYwLC0xNDUxNTc0MzEzXX0=
 -->
