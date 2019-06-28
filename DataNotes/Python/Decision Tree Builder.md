@@ -43,7 +43,7 @@ For now, we will use classification error as the total misclassifications in the
 	    best_feature = None
 	    #Initialze the best error rate for storing
 	    #Error rates are always <= 1, so we choose something larger
-	    best_error = 2
+	    best_error_rate = 2
 
 		total_observations = float(len(data))
 		
@@ -59,7 +59,14 @@ For now, we will use classification error as the total misclassifications in the
 			left_errors = split_errors(left_split[target])
 			#Calculate the error rate of the right split
 			right_errors = split_errors(right_split[target])
-			error_rate = left_errors + right_errors/
+			
+			#Calculate the error rate of this split
+			error_rate = (left_errors + right_errors)/total_observations)
+			
+			#If this is the lowest error rate found so far, store it
+			if error_rate < best_error_rate:
+				best_error_rate = error_rate
+				best_feature = featur
 			
 
 
@@ -68,5 +75,5 @@ For now, we will use classification error as the total misclassifications in the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI2MjU4MzE0NF19
+eyJoaXN0b3J5IjpbMjAzNTI4NzIyN119
 -->
