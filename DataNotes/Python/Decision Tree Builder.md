@@ -4,7 +4,8 @@
 
 #### Define categorical features
 
-	categorical_features = ['x1', 'x2','x3','x4',...]  
+	categorical_features = ['x1', 'x2','x3','x4',...]
+	data = data[categorical_features]  
 
 #### All categorical features are converted to binary variables
     for feature in features categorical_features:
@@ -24,5 +25,5 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODA2NDk1NTNdfQ==
+eyJoaXN0b3J5IjpbLTYyODk0OTM4Nl19
 -->
