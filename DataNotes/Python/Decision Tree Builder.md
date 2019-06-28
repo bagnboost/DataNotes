@@ -34,13 +34,18 @@ For now, we will use classification error as the total misclassifications in the
 1. Loop over every feature
 2. Within a feature loop, split the data in two. One where observations = 0 (left split), one where observations = 1 (right split).
 3.  Calculate the total error rate from both splits
-4.  If the total error rate is the smallest error rate so far, 
+4.  If the total error rate is the smallest error rate so far, store the feature and the error rate.
 
+#### Determining the best split
+
+    def best_split(data, features, response):
+	    #Initialize the best feature for storing
+	    best_feature = 
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDE0NDc4ODJdfQ==
+eyJoaXN0b3J5IjpbMTEwOTAwOTQ4MV19
 -->
