@@ -224,11 +224,37 @@ Building the tree does not output any performance metrics. We need to use the tr
 	    prediction = data.apply(lambda x: classify(tree, x))
 	    data['prediction'] = prediction
 
-		errors - len(data[data['prediction']!= data[..'response'..]]
+		errors - len(data[data['prediction']!= data[..'response'..]])
+		total_observations = len(data)
+		error_rate = float(errors)/float(total_observations)
+		
+		return error_rate
+
+## Print Tree
+
+    def print_stump(tree, name = 'root'):
+    
+	    split_name = tree['splitting_feature']
+	    if split_name is None:
+        print "(leaf, label: %s)" % tree['prediction']
+        return None
+    split_feature, split_value = split_name.split('.')
+    print '                       %s' % name
+    print '         |---------------|----------------|'
+    print '         |                                |'
+    print '         |                                |'
+    print '         |                                |'
+    print '  [{0} == 0]               [{0} == 1]    '.format(split_name)
+    print '         |                                |'
+    print '         |                                |'
+    print '         |                                |'
+    print '    (%s)                         (%s)' \
+        % (('leaf, label: ' + str(tree['left']['prediction']) if tree['left']['is_leaf'] else 'subtree'),
+           ('leaf, label: ' + str(tree['right']['prediction']) if tree['right']['is_leaf'] else 'subtree'))
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTM3NzA5NiwtNDUxODU1MTYwLC0xND
+eyJoaXN0b3J5IjpbMTQ4NzExOTkwMSwtNDUxODU1MTYwLC0xND
 UxNTc0MzEzXX0=
 -->
