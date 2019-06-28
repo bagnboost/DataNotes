@@ -40,12 +40,18 @@ For now, we will use classification error as the total misclassifications in the
 
     def best_split(data, features, response):
 	    #Initialize the best feature for storing
-	    best_feature = 
+	    best_feature = None
+	    #Initialze the best error rate for storing
+	    #Error rates are always <= 1, so we choose something larger
+	    best_error = 2
+
+		total_observations = float(len(data))
+		
 
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwOTAwOTQ4MV19
+eyJoaXN0b3J5IjpbLTQ2MDEzNjM0NF19
 -->
