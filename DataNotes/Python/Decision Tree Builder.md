@@ -47,13 +47,11 @@ We first need to define the method for calculating the errors at each split so w
 		    return 0
 		    
 		#If the above condition is not met,
-		#there is some error
+		#then there are some errors
 		#Count the number of responses equal to 0
 		data_response_0 = len(split_responses[split_responses == 0])
 		#Count the number of responses equal to 1
 		data_response_1 = len(split_responses[split_responses == 1])
-		
-		#Calculate the number of errors
 		#Whichever class is less represented are the errors
 		if (data_response_0 >= data_response_1):
 			errors = data_response_1
@@ -207,5 +205,5 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0ODc4NDczLC0xNDUxNTc0MzEzXX0=
+eyJoaXN0b3J5IjpbLTQ1MTg1NTE2MCwtMTQ1MTU3NDMxM119
 -->
