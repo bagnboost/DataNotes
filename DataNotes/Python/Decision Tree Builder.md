@@ -193,11 +193,13 @@ We will now introduce another stopping criteria called the max depth, which will
 				'left': left_tree,
 				'right': right_tree}
 		
+## Classify Observations
 
+## Evaluate The Tree
 
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzQ4NjM0M119
+eyJoaXN0b3J5IjpbLTc0NjQ1ODcwOF19
 -->
