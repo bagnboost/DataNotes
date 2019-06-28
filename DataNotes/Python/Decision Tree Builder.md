@@ -205,7 +205,11 @@ Building the tree does not output any performance metrics. We need to use the tr
 		
 		#If the tree is not a leaf, continue searching for leaf
 		else:
-			split_value = dat
+			split_value = data[tree['splitting_feature']]
+			if (split_value == 0):
+				return classify_observations(tree['left'], data, annotate)
+		    else:
+			    return classify_observations(tree['right'], data, annotate)
 		
 
 ## Evaluate The Tree
@@ -214,6 +218,6 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyNTUxMzMsLTQ1MTg1NTE2MCwtMTQ1MT
-U3NDMxM119
+eyJoaXN0b3J5IjpbLTgyMzg1NjAzNSwtNDUxODU1MTYwLC0xND
+UxNTc0MzEzXX0=
 -->
