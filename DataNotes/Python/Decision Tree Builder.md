@@ -232,7 +232,7 @@ We have a tree and we can use it to classify observations. Here we use those pre
 		return error_rate
 
 ## Print Tree
-We can print a stump of the tree by placing print commands strategically.
+We can print a stump of the tree by placing print commands strategically. This is useful for a stump, but cannot generalize to more tree e
 
     def print_stump(tree, name = 'root'):
     	
@@ -259,6 +259,6 @@ We can print a stump of the tree by placing print commands strategically.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDcwODIwNzgsLTE1NjIwNTEyNzUsLT
+eyJoaXN0b3J5IjpbLTE5NTMzMjI4MjYsLTE1NjIwNTEyNzUsLT
 Q1MTg1NTE2MCwtMTQ1MTU3NDMxM119
 -->
