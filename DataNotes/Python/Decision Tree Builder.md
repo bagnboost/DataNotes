@@ -133,7 +133,14 @@ We will now introduce another stopping criteria called the max depth, which will
 
 			#Stopping condition 1:
 			#Check if there are errors in the node
-			#If there are no errors, we n
+			#If there are no errors, we stop splitting
+			#and create a leaf
+			if (split_errors(response_values) == 0):
+				print("Stopping condition 1 reached.")
+				return create_leaf(response_values)
+			
+			#Stopping condition 2:
+			#Check if there are any fea
 		
 
 
@@ -141,5 +148,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyOTQzODk4OV19
+eyJoaXN0b3J5IjpbLTE1MjQyNjI0OTNdfQ==
 -->
