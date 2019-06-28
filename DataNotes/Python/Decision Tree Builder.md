@@ -36,8 +36,8 @@ For now, we will use classification error as the total misclassifications in the
 3.  Calculate the total error rate from both splits
 4.  If the total error rate is the smallest error rate so far, store the feature and the error rate.
 
-#### Calculating the split mistakes
-We first need to define the method for calculating the errors at each split so we can calculate the error rate for each split.
+#### Calculating the split errors
+We first need to define the method for calculating the errors at each split so we can determine the best feature to split on.
 
     def split_errors(split_responses):
 	    #If the responses are empty,
@@ -64,6 +64,7 @@ We first need to define the method for calculating the errors at each split so w
 	    
 
 #### Determining the best split
+Now that the metric for best split is defined, we can calculate it one feature at a time and determine the best feature to spli
 
     def best_split(data, features, response):
 	    #Initialize the best feature for storing
@@ -103,5 +104,5 @@ We first need to define the method for calculating the errors at each split so w
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjkwMDMyNzkzXX0=
+eyJoaXN0b3J5IjpbMTA4MTUyNzkzNF19
 -->
