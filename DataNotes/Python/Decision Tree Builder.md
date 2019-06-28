@@ -48,9 +48,12 @@ For now, we will use classification error as the total misclassifications in the
 		#If the above condition is not met,
 		#there is some error
 		#Count the number of responses equal to 0
-		data_response_0 = len(split_responses
+		data_response_0 = len(split_responses[split_responses == 0])
 		#Count the number of responses equal to 1
 		data_response_1 = len(split_responses[split_responses == 1])
+		
+		#Calculate the number of errors
+		#Whichever class is less represented are the 
 	    
 
 #### Determining the best split
@@ -93,5 +96,5 @@ For now, we will use classification error as the total misclassifications in the
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjk1MDA4MjI0XX0=
+eyJoaXN0b3J5IjpbLTE0MzA2NjkwNDJdfQ==
 -->
