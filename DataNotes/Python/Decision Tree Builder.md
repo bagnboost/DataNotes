@@ -164,6 +164,15 @@ We will now introduce another stopping criteria called the max depth, which will
 		#Define the left and right splits
 		left_split = data[data[splitting_feature] == 0]
 		right_split = data[data[splitting_feature] == 1]
+
+		#Remove the feature we just split on from consideraion
+		#for future splits
+		remaining_features.remove(splitting_feature)
+
+		#Check to see if the split is perfect
+		#If so, create a leaf
+		if (len(left_split) == len(data)):
+			print("
 		
 
 
@@ -171,5 +180,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE1NzEzNDE5XX0=
+eyJoaXN0b3J5IjpbLTIwNjg2MTAxNjRdfQ==
 -->
