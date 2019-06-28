@@ -154,6 +154,12 @@ We will now introduce another stopping criteria called the max depth, which will
 		#If we already reached the limit,
 		#create a leaf
 		if (current_depth >= max_depth):
+			print("Stopping condition 3 reacheed.")
+			return create_leaf(response_values)
+		
+		#If we made it this far, it means we can continue splitting
+		#We can now determine the best split
+		
 		
 
 
@@ -161,5 +167,5 @@ We will now introduce another stopping criteria called the max depth, which will
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5MDk3MzAwOF19
+eyJoaXN0b3J5IjpbLTEwNTk2Mjk4NjVdfQ==
 -->
