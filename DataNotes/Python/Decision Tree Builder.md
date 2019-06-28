@@ -199,6 +199,13 @@ Building the tree does not output any performance metrics. We need to use the tr
 
     def classify_observations(tree, data, annotate = False)
 	    
+	    #If the tree split is a leaf, return the prediction
+	    if tree['is_leaf'] == True:
+		    return tree['prediction']
+		
+		#If the tree is not a leaf, 
+		else:
+		
 
 ## Evaluate The Tree
 (to be continued)
@@ -206,6 +213,6 @@ Building the tree does not output any performance metrics. We need to use the tr
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQ5MjQ1OTA2LC00NTE4NTUxNjAsLTE0NT
-E1NzQzMTNdfQ==
+eyJoaXN0b3J5IjpbLTE2MjU0NTU5NjcsLTQ1MTg1NTE2MCwtMT
+Q1MTU3NDMxM119
 -->
