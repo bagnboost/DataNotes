@@ -209,7 +209,7 @@ Building the tree does not output any performance metrics. We need to use the tr
 		else:
 			split_value = data[tree['splitting_feature']]
 			if annotate == True:
-				print("Split on %s=%s"% (tree['splitting_feature'], 
+				print("Split on %s=%s" % (tree['splitting_feature'], split_value))
 			if (split_value == 0):
 				return classify_observations(tree['left'], data, annotate)
 		    else:
@@ -217,11 +217,15 @@ Building the tree does not output any performance metrics. We need to use the tr
 		
 
 ## Evaluate The Tree
-(to be continued)
+
+    def evaluate_tree_error(tree, data, response):
+	    
+	    #Predict using the classify() functions
+	    prediction = data.apply(lambda x: classify(tree, x))
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTIzNDc4NzIsLTQ1MTg1NTE2MCwtMT
-Q1MTU3NDMxM119
+eyJoaXN0b3J5IjpbLTIzNTg3NDA0NiwtNDUxODU1MTYwLC0xND
+UxNTc0MzEzXX0=
 -->
