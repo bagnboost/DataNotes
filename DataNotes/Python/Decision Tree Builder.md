@@ -194,12 +194,15 @@ We will now introduce another stopping criteria called the max depth, which will
 				'right': right_tree}
 		
 ## Classify Observations
+Building the tree does not output any performance metrics. We need to use the tree's structure to classify observations as either 0 or 1. Once we do this, we can then evaluate the effectiveness of the tree.
+
+(to be continued)
 
 ## Evaluate The Tree
-
+(to be continued)
     
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc0NjQ1ODcwOF19
+eyJoaXN0b3J5IjpbLTE0NTE1NzQzMTNdfQ==
 -->
